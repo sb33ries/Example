@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+dash = "*"
+plotly = "*"
 
 [dev-packages]
 
