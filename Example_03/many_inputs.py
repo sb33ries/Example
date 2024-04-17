@@ -1,7 +1,7 @@
 import plotly.express as px
 import plotly.graph_objects as go
 
-from dash import Dash, dcc, html, Input, Output, state, callback
+from dash import Dash, dcc, html, Input, Output, callback
 
 from datetime import datetime as dt
 import numpy as np
