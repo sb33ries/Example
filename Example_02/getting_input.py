@@ -1,7 +1,7 @@
 import plotly.express as px
 import plotly.graph_objects as go
 
-from dash import Dash, dcc, html, Input, Output, callback
+from dash import Dash, dcc, html, Input, Output, state, callback
 
 from datetime import datetime as dt
 import numpy as np
@@ -33,7 +33,7 @@ def make_figure(freq: str = 1) -> go.Figure:
     if freq == "":
         freq = 0
     freq = float(freq)
-    
+
     x = np.linspace(0, 10, 500)
     y = np.sin(TAU*x*freq)
 
